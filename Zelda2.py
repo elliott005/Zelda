@@ -614,7 +614,7 @@ class Object:
 
 class Enemy:
     def __init__(self, x, y, w, h, boss=False):
-        self.image = pygame.image.load('images/enemy_walk_1.png').convert_alpha()
+        self.image = pygame.image.load('images/enemy_walk_0.png').convert_alpha()
         self.image = pygame.transform.scale(self.image, (w, h))
         self.rect = self.image.get_rect()
         self.imageRight = pygame.transform.flip(self.image, True, False)
